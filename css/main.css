@@ -1,0 +1,174 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    color: rgb(250, 250, 250);
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(31, 35, 46);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.title {
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.copyright {
+    text-align: right;
+    padding-right: 2%;
+}
+
+.logo {
+    height: 100%;
+    position: absolute;
+}
+
+.section-title {
+    padding: 0 30px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    text-align: left;
+}
+
+.section-title::after {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid white;
+}
+/* END BASE */
+
+/* LAYOUT */
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+}
+
+header, footer {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 8%;
+    background-color: rgb(76, 81, 94);
+    line-height: 55px;
+}
+
+#content {
+    position: relative;
+    flex: 1 0;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+section {
+    padding: 0 30px;
+    margin-bottom: 4%;
+}
+
+/* END LAYOUT */
+
+/* FORM ELEMENTS */
+button, input[type="button"] {
+    background-color: rgb(76, 81, 94);
+    border: 1px solid rgb(250, 250, 250);
+    padding: 10px 30px;
+    border-radius: 2px;
+    transition: 0.2s linear all;
+}
+
+button:hover, input[type="button"]:hover {
+    background-color: rgb(56, 60, 70);
+    border: 1px solid yellow;
+    cursor: pointer;
+}
+
+.button-row {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.calculator-button {
+    padding: 4px 8px;
+    min-width: calc(100% / 3);
+    flex: 1 0;
+}
+
+input {
+    background-color: rgb(76, 81, 94);
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 7px;
+    width: 100%;
+}
+
+input:hover {
+    border: 1px solid yellow;
+}
+
+/* END FORM ELEMENTS */
+
+/* FOR TESTS */
+
+.tests-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.test-container {
+    position: relative;
+    width: 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.test-box {
+    width: 100px;
+    height: 100px;
+}
+
+.red-bg {
+    background-color: red;
+}
+
+.blue-bg {
+    background-color: blue;
+}
+
+.test-text {
+    border: 1px solid white;
+    padding: 3px;
+}
+
+.button-grid {
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.inputs-wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+}
+
+/* END FOR TESTS */

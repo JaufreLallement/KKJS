@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" xml:lang="en">
+
+<head>
+    <!-- Basic Page Needs
+                        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <meta name="keywords" content="text/html">
+    <meta name="author" content="Lallement Jaufré">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests JS</title>
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <!-- Header
+    ––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <header id="header" class="flexed-row">
+        <img src="img/logo-header1.png" alt="JS" class="logo">
+        <h1 id="main-title" class="title">Tests JS</h1>
+    </header>
+
+    <!-- Main Content
+    ––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div id="content">
+        <section id="js-basics-evaluation" class="test-section">
+            <h2 class="title section-title">JS Basics Evaluation</h2>
+            <div class="tests-wrapper">
+                <div class="test-container">
+                    <button id="append-test-button" class="event-button append-button">Append element</button>
+                    <div id="append-test-container"></div>
+                </div>
+                <div class="test-container">
+                    <div id="change-bg-test" class="red-bg test-box"></div>
+                </div>
+                <div class="test-container">
+                    <p id="change-text-test" class="test-text">Unset</p>
+                </div>
+                <div class="test-container">
+                    <input type="text" id="keyPress-input" class="input-test">
+                    <p id="keyPress-display" class="test-text">No key pressed</p>
+                </div>
+            </div>
+        </section>
+        <section id="js-basics-calculator" class="test-section">
+            <h2 class="title section-title">JS Basics Calculator</h2>
+            <div class="tests-wrapper">
+                <div class="test-container">
+                    <input type="text" id="calculator-input" class="input-test">
+                    <div id="calculator-buttons" class="button-row"></div>
+                </div>
+            </div>
+        </section>
+        <section id="js-basics-calculator" class="test-section">
+            <h2 class="title section-title">JS Basics DOM Exercices</h2>
+            <div class="tests-wrapper">
+                <div class="test-container button-grid">
+                    <button id="dom-ex-button1" name="button1" class="dom-ex-button">Button1</button>
+                    <button id="dom-ex-button2" name="button2" class="dom-ex-button">Button2</button>
+                    <button id="dom-ex-button3" name="button3" class="dom-ex-button">Button3</button>
+                    <button id="dom-ex-button4" name="button4" class="dom-ex-button">Button4</button>
+                </div>
+                <div class="test-container">
+                    <input type="button" id="dom-ex-input1" value="button" class="input-test dom-ex-input dom-exchange-input">
+                    <input type="button" id="dom-ex-input2" value="button" class="input-test dom-ex-input dom-exchange-input">
+                </div>
+                <div class="test-container">
+                    <div class="button-group">
+                        <button id="dom-add-input" class="dom-inputlist-change">Add input</button>
+                        <button id="dom-del-input" class="dom-inputlist-change">Delete input</button>
+                    </div>
+                    <div id="dom-append-inputs" class="inputs-wrapper"></div>
+                </div>
+            </div>
+        </section>
+        <section id="js-basics-calculator" class="test-section">
+            <h2 class="title section-title">JS Basics DOM Exercices</h2>
+            
+        </section>
+    </div>
+
+    <!-- Footer
+    ––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <footer class="flexed-column">
+        <p class="copyright">&copy; - Lallement Jaufré 2019</p>
+    </footer>
+
+    <!-- JAVASCRIPT
+    ––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type='text/javascript' src='js/evaluation.js'></script>
+    <script type='text/javascript' src='js/calculator.js'></script>
+    <script type='text/javascript' src='js/domManip.js'></script>
+</body>
+
+</html>

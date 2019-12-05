@@ -1,0 +1,11 @@
+.star-off {
+    content: url('../img/star_off.gif');
+}
+
+.star-on {
+    content: url('../img/star_on.gif');
+}
+
+.star:hover {
+    cursor: pointer;
+}
