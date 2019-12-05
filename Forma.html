@@ -1,0 +1,79 @@
+﻿<html>
+
+<head>
+    <title>2019 April formos testas</title>
+</head>
+
+<body>
+
+    <table style="width:100%;">
+        <tr>
+            <td>
+                First name:</td>
+            <td>
+                <input id="A_nam1" class="field" type="text" required /> *</td>
+            <td>
+                Būtinas laukas. Required field.</td>
+        </tr>
+        <tr>
+            <td>
+                Last name:</td>
+            <td>
+                <input id="A_lnam1" class="field" type="text" required /> *</td>
+            <td>
+                Būtinas laukas. Būtinai tavo pavardė. Required field. Your last name.</td>
+        </tr>
+        <tr>
+            <td>
+                Password:</td>
+            <td>
+                <input id="A_pass1" class="field" type="password" required /> *</td>
+            <td>
+                Būtinas laukas. Ne trumpesnis kaip 6 simboliai. Ne ilgesnis kaip 10 simboliai. Required field. Between 6
+                and 10 symbols.</td>
+        </tr>
+        <tr>
+            <td>
+                Age:</td>
+            <td>
+                <input id="A_age1" type="number" min="20" class="field" max="150" required /> *</td>
+            <td>
+                Būtinas laukas. Tik skaičiai. Ne jaunesnis kaip 20. Required field. Only numbers. Not younger than 20.
+            </td>
+        </tr>
+        <tr>
+            <td>
+                E-mail address:</td>
+            <td>
+                <input id="A_mail1" class="field" type="email" required /> *</td>
+            <td>
+                Būtinas laukas. Atitinka e-pašto formatą. Required field. Corresponds e-mail format.</td>
+        </tr>
+        <tr>
+            <td>
+                notes:</td>
+            <td>
+                <input id="A_tmpTxt1" class="field" type="text" /> </td>
+            <td>
+                Sutampa su vardu. The same as First name. &nbsp;</td>
+        </tr>
+    </table>
+
+    <p>
+        &nbsp;</p>
+    <p>
+        <input id="btn1" type="button" value="OK" />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input id="btn2" type="button" value="Clear" />
+
+    </p>
+
+    <div id="validation-result" class="message-wrapper"></div>
+
+    <!-- JAVASCRIPT
+    ––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type='text/javascript' src='js/formValidationAssesment.js'></script>
+
+</body>
+
+</html>
